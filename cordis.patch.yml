@@ -1,0 +1,7 @@
+- insert:
+    - id: dsh-music-panel
+      name: 'dsh-music-panel'
+      config:
+        basePath: '/dsh-netease'
+        quality: 'exhigh'
+        cacheTtlMs: 600000

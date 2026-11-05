@@ -1,0 +1,53 @@
+{
+  "name": "dsh-music-panel",
+  "version": "0.9.0",
+  "description": "NetEase Cloud Music panel for DeepSeek Harness: search, charts, favorites, play history, lyrics and taste-based recommendations. Plays official streams only — no VIP or region-lock unlocking.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./lib/client.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "music",
+    "netease",
+    "netease-cloud-music",
+    "music-player",
+    "lyrics",
+    "recommendation"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "license": "MIT",
+  "author": "CCC (woshijing1991-cloud)",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/woshijing1991-cloud/dsh-music-panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/woshijing1991-cloud/dsh-music-panel/issues"
+  },
+  "homepage": "https://github.com/woshijing1991-cloud/dsh-music-panel#readme"
+}

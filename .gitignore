@@ -1,0 +1,21 @@
+# dependencies
+node_modules/
+
+# local scratch: browser profiles, probes, dumps, logs
+test/
+*.log
+live-*.json
+*.bak
+*.bak2
+*.bak3
+
+# runtime data written by the plugin itself (never commit)
+dsh-music-data/
+dsh-music-panel-load-logs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
